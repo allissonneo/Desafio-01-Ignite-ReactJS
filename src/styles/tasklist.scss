@@ -4,7 +4,7 @@ section.task-list {
   
   margin-top: -10rem;
   padding: 70px 60px;
-  
+  box-shadow: #000 0px 0px 5px;
   filter: drop-shadow(0px 24px 64px rgba(0, 0, 0, 0.06));
   
   header {
@@ -12,7 +12,9 @@ section.task-list {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     h2 {
       color: var(--text-title);
       font-size: 2.25rem;
